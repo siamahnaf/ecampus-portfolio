@@ -5,6 +5,11 @@ import Header from "@/Sections/Header";
 import Hero from "@/Sections/Hero";
 import Service from "@/Sections/Service";
 import About from "@/Sections/About";
+import Features from "@/Sections/Features";
+import Team from "@/Sections/Team";
+import Gallery from "@/Sections/Gallery";
+import Contact from "@/Sections/Contact";
+import Footer from "@/Sections/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +18,11 @@ const Home = () => {
       <Hero />
       <Service />
       <About />
+      <Features />
+      <Team />
+      <Gallery />
+      <Contact />
+      <Footer />
     </Fragment>
   );
 };

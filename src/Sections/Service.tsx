@@ -9,7 +9,7 @@ import Card from "@/Components/Service/Card";
 
 const Service = () => {
     return (
-        <section id="about">
+        <section id="service">
             <Container className="grid grid-cols-3 gap-8 py-8">
                 {AboutData.map((item, i) => (
                     <Card key={i} about={item} />

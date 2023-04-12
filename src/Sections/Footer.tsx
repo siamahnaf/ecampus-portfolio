@@ -11,7 +11,7 @@ const Naves = [
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
     { name: "Notice Board", id: "notice" },
-    { name: "Courses", id: "courses" },
+    { name: "Courses", id: "service" },
     { name: "Team", id: "team" },
     { name: "Gallery", id: "gallery" },
     { name: "Contact", id: "contact" }
@@ -27,7 +27,7 @@ const Socials = [
 const Footer = () => {
     return (
         <footer id="footer">
-            <Container className="py-8 bg-white">
+            <Container className="bg-[radial-gradient(farthest-corner,_transparent,_white),url('/images/net.png')] py-10">
                 <div className="grid grid-cols-12 gap-2 items-center mb-10">
                     <div className="col-span-9">
                         <Image src="/images/logo.png" alt="Logo" width={312} height={232} className="w-24" />
@@ -41,7 +41,7 @@ const Footer = () => {
                                         offset={-65}
                                         duration={400}
                                         spy={true}
-                                        className="opacity-90"
+                                        className="opacity-90 cursor-pointer"
                                     >
                                         {item.name}
                                     </ScrollLink>
@@ -60,7 +60,7 @@ const Footer = () => {
                 </div>
                 <div className="flex gap-2 items-center">
                     <div >
-                        <p className="text-base opacity-60">© {new Date().getFullYear()} CodeStation21. All rights reserved.</p>
+                        <p className="text-base opacity-60">© {new Date().getFullYear()} <Link href="https://codestation21.com/" target="_blank">Code Station21</Link>. All rights reserved.</p>
                     </div>
                     <div className="flex-1">
                         <ul className="flex justify-end gap-6">

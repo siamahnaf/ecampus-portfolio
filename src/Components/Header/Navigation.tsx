@@ -6,7 +6,7 @@ const Naves = [
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
     { name: "Notice Board", id: "notice" },
-    { name: "Courses", id: "courses" },
+    { name: "Courses", id: "service" },
     { name: "Team", id: "team" },
     { name: "Gallery", id: "gallery" },
     { name: "Contact", id: "contact" }

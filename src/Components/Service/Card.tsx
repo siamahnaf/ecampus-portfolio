@@ -1,11 +1,11 @@
 import { Link } from "react-scroll";
 
 //Graphql
-import { AboutInfo } from "@/Graphql/Types/About/about.types";
+import { ServiceInfo } from "@/Urql/Types/Service/service.types";
 
 //Interface
 interface Props {
-    about: AboutInfo
+    about: ServiceInfo
 }
 
 const Card = ({ about }: Props) => {

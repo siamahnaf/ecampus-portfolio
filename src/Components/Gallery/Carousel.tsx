@@ -14,10 +14,10 @@ const Carousel = () => {
     return (
         <div className="embla overflow-hidden mt-8">
             <div className="embla__viewport" ref={emblaRef}>
-                <div className="embla__container flex gap-3">
+                <div className="embla__container flex">
                     {GalleryData.map((item, i) => (
                         <div
-                            className="embla__slide flex-[0_0_25%]"
+                            className="embla__slide flex-[0_0_25%] mx-1.5"
                             key={i}
                         >
                             <div className={`${i % 2 !== 0 ? "mt-4" : ""}`}>

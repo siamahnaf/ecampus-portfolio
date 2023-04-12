@@ -5,6 +5,7 @@ import Header from "@/Sections/Header";
 import Hero from "@/Sections/Hero";
 import Service from "@/Sections/Service";
 import About from "@/Sections/About";
+import Notice from "@/Sections/Notice";
 import Features from "@/Sections/Features";
 import Team from "@/Sections/Team";
 import Gallery from "@/Sections/Gallery";
@@ -18,6 +19,7 @@ const Home = () => {
       <Hero />
       <Service />
       <About />
+      <Notice />
       <Features />
       <Team />
       <Gallery />

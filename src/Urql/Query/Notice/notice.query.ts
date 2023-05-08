@@ -6,11 +6,7 @@ query getNotices($searchInput: SearchInput!) {
       id
       title
       description
-      to
-      class {
-        id
-        name
-      }
+      pdf
       createdBy {
         name
         phone

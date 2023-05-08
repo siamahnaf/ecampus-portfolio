@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import moment from "moment";
-import parse from "html-react-parser";
+import { Icon } from "@iconify/react";
+import Link from "next/link";
 
 //Urql
 import { useQuery } from "urql";
@@ -34,9 +35,14 @@ const Card = () => {
         <div className="border-2 border-solid border-main p-3 rounded-md">
             <div className="p-5 bg-main rounded-md text-white">
                 <p className="text-base font-semibold opacity-95"><span>Notice: </span>{notice?.title}</p>
+                {notice?.pdf &&
+                    <p className="my-3 font-medium">
+                        <Icon className="inline text-2xl mb-1" icon="material-symbols:attach-file" />
+                        1 attached file <Link href={process.env.NEXT_PUBLIC_IMAGE_URL + notice.pdf} target="_blank" className="font-bold">download</Link></p>
+                }
                 <p className="text-base mt-px"><span>Date: </span>{moment(notice?.created_at).format("dddd, MMMM Do")}</p>
-                <div className="my-4 text-sm">
-                    {parse(notice?.description || "")}
+                <div className="my-4 text-sm whitespace-pre-line">
+                    {notice?.description}
                 </div>
                 <p className="text-sm"><span>Publisher: </span>{notice?.createdBy?.name || notice?.createdBy?.phone}</p>
             </div>

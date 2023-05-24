@@ -9,7 +9,7 @@ import ContactData from "@/Data/Contact.data";
 const Contact = () => {
     return (
         <section id="contact">
-            <Container className="py-8 grid grid-cols-3 gap-4 bg-white">
+            <Container className="py-8 grid grid-cols-3 md:grid-cols-3 xxs:grid-cols-1 gap-4 bg-white">
                 {ContactData.map((item, i) => (
                     <div className="px-10 py-8 text-center" key={i}>
                         <div className="w-14 h-14 bg-main rounded-full flex justify-center items-center mx-auto text-white">

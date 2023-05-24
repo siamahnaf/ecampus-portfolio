@@ -17,7 +17,7 @@ const Carousel = () => {
                 <div className="embla__container flex">
                     {GalleryData.map((item, i) => (
                         <div
-                            className="embla__slide flex-[0_0_25%] mx-1.5"
+                            className="embla__slide flex-[0_0_25%] msm:flex-[0_0_25%] xxs:flex-[0_0_50%]  mx-1.5"
                             key={i}
                         >
                             <div className={`${i % 2 !== 0 ? "mt-4" : ""}`}>

@@ -21,7 +21,7 @@ const Notice = () => {
                     <p className="w-[60%] mx-auto mt-2">Welcome to the school notice board! This is the go-to destination for all important announcements and information regarding the school community.</p>
                 </div>
                 <NoticeContext.Provider value={{ index, setIndex }}>
-                    <div className="grid grid-cols-2 gap-10 mt-10">
+                    <div className="grid grid-cols-2 md:grid-cols-2 xxs:grid-cols-1 gap-10 mt-10">
                         <Lists />
                         <Card />
                     </div>

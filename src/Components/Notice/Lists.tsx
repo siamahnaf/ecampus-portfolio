@@ -39,9 +39,9 @@ const Lists = () => {
                 <ul>
                     {data?.getNotices.map((item, i) => (
                         <li className="flex gap-2 my-3 cursor-pointer" onClick={() => setIndex(i)} key={i}>
-                            <p className="basis-[17%] text-sm font-semibold">{moment(item.created_at).format("DD MMM YYYY")}</p>
-                            <p className="flex-1 line-clamp-1 text-sm opacity-60 select-none">{item.title}</p>
-                            <p className="basis-[15%] text-sm opacity-60">{moment(item.created_at).fromNow()}</p>
+                            <p className="basis-[17%] lsm:basis-[17%] msm:basis-[20%] sm:basis-[24%] xxs:basis-[33%] text-sm font-semibold">{moment(item.created_at).format("DD MMM YYYY")}</p>
+                            <p className="flex-1 line-clamp-1 xs:line-clamp-1 xxs:line-clamp-2 text-sm opacity-60 select-none">{item.title}</p>
+                            <p className="basis-[15%] smd:basis-[15%] lsm:basis-[20%] sm:basis-[24%] xxs:basis-[30%] text-sm opacity-60">{moment(item.created_at).fromNow()}</p>
                         </li>
                     ))}
                 </ul>

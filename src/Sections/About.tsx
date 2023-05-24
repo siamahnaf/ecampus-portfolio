@@ -6,7 +6,7 @@ import Container from "@/Components/Common/Container";
 const About = () => {
     return (
         <section id="about">
-            <Container className="grid grid-cols-2 gap-10 items-start py-8">
+            <Container className="grid grid-cols-2 md:grid-cols-2 xxs:grid-cols-1 gap-10 items-start py-8">
                 <div className="mt-4">
                     <h1 className="text-2xl font-bold">Welcome to Maple Tree!</h1>
                     <p className="font-medium opacity-60 text-base mt-3">At Maple Tree School, we are dedicated to providing a high-quality education to all of our students.</p>

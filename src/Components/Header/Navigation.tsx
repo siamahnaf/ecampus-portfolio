@@ -14,7 +14,7 @@ const Naves = [
 
 const Navigation = () => {
     return (
-        <div className="flex-1 text-right">
+        <div className="flex-1 text-right md:block xxs:hidden">
             <ul className="flex gap-4 justify-end">
                 {Naves.map((item, i) => (
                     <li key={i}>

@@ -30,7 +30,7 @@ const Team = () => {
                         spy={true}
                         className="border border-solid border-textColor border-opacity-20 py-2 px-4 block cursor-pointer rounded">About Us</Link>
                 </div>
-                <div className="grid grid-cols-3 gap-8 mt-8">
+                <div className="grid grid-cols-3 md:grid-cols-3 xxs:grid-cols-1 gap-8 mt-8">
                     {TeamData.map((item, i) => (
                         <Card key={i} team={item} />
                     ))}

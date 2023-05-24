@@ -12,9 +12,13 @@ import Gallery from "@/Sections/Gallery";
 import Contact from "@/Sections/Contact";
 import Footer from "@/Sections/Footer";
 
+//Seo
+import Seo from "@/Utilis/Seo";
+
 const Home = () => {
   return (
     <Fragment>
+      <Seo />
       <Header />
       <Hero />
       <Service />

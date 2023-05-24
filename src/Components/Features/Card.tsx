@@ -12,7 +12,7 @@ interface Props {
 
 const Card = ({ features }: Props) => {
     return (
-        <div className="text-center px-10 py-8">
+        <div className="text-center px-10 py-8 lg:px-10 lg:py-8 md:px-3 md:py-5">
             <div className="w-12 h-12 flex justify-center items-center mx-auto text-white bg-main rounded-md">
                 <Icon icon={features.icon} className="text-xl" />
             </div>

@@ -4,7 +4,7 @@
 A school management web application portfolio part. It has school management frontend and backend applications also, but due to luck of nodejs hosting we can't provide any live url. It is a modern and seamless designed web portfolio.
 
 ## Live demo
-https://ecampus.cabbageweb.com/
+[https://ecampus-managment.netlify.app/](https://ecampus-managment.netlify.app/)
 
 ## Run Locally
 - **Download:** Start by downloading the code.
